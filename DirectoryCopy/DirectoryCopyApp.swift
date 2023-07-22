@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct DirectoryCopyApp: App {
+    
+    let height: CGFloat = 300
+    let width: CGFloat = 300
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

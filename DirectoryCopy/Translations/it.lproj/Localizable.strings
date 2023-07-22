@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  DirectoryCopy
+
+  Created by Eric Dupont on 22.07.23.
+  
+*/
+
+"app_title" = "Sincronizzatore di Cartelle";
+"choose_source_button" = "Scegli una cartella sorgente (A)";
+"source_text" = "Fonte (A):";
+"not_choosen_text" = "non selezionato";
+"choose_dest_button" = "Scegli una cartella di destinazione (B)";
+"dest_text" = "Destinazione (B):";
+"should_delete_toggle" = "Elimina i file presenti nella cartella di destinazione ma non nella cartella sorgente";
+"check_existing_files_toggle" = "Controlla le modifiche nei file esistenti (consigliato)";
+"check_method_picker" = "Metodo di controllo:";
+"sha256_text" = "SHA256 (consigliato)";
+"direct_comparism_text" = "Confronto diretto dei file";
+"check_method_hint_text" = "Nota: Il metodo SHA256 assicura una sincronizzazione molto più veloce ma non garantisce una precisione del 100%. Il confronto diretto dei file permette di verificare con una certezza del 100% se il contenuto del file è stato modificato. La probabilità che questa modifica non venga rilevata con SHA256 è inferiore allo 0,00000001%!";
+"sync_button" = "Avvia sincronizzazione";
+"no_directory_choosen_alert_title" = "Cartelle non selezionate";
+"no_directory_choosen_alert_text" = "Per favore, scegli prima una cartella sorgente e una cartella di destinazione prima di iniziare la sincronizzazione.";
+"success_alert_title" = "Successo!";
+"success_alert_text" = "La sincronizzazione è stata completata con successo!";
+"synchronization_running_progress" = "Sincronizzazione delle cartelle in corso...";
+"stats_files_in_source" = "File nella cartella di origine: %d";
+"stats_directories_in_source" = "Cartelle nella cartella di origine: %d";
+"stats_copied_files" = "File copiati: %d";
+"stats_overwritten_files" = "File sovrascritti: %d";
+"stats_deleted_files_in_destination" = "File cancellati nella cartella di destinazione: %d";
+"stats_duration" = "Durata: %.2f secondi";
+

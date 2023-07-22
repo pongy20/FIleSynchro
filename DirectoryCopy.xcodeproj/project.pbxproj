@@ -11,6 +11,13 @@
 		C3045EF02A6A708700A028D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3045EEF2A6A708700A028D8 /* ContentView.swift */; };
 		C3045EF22A6A708800A028D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3045EF12A6A708800A028D8 /* Assets.xcassets */; };
 		C3045EF52A6A708800A028D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3045EF42A6A708800A028D8 /* Preview Assets.xcassets */; };
+		C35288792A6BE21D001B3BEB /* ContentCheckMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35288782A6BE21D001B3BEB /* ContentCheckMethod.swift */; };
+		C352887D2A6C2E7C001B3BEB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C352887F2A6C2E7C001B3BEB /* Localizable.strings */; };
+		C3D28F032A6C4D91007176F0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F022A6C4D91007176F0 /* Extensions.swift */; };
+		C3D28F052A6C4E11007176F0 /* FilePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F042A6C4E11007176F0 /* FilePickerView.swift */; };
+		C3D28F072A6C57FB007176F0 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F062A6C57FB007176F0 /* OptionsView.swift */; };
+		C3D28F0A2A6C5936007176F0 /* SynchronizeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F092A6C5936007176F0 /* SynchronizeButtonView.swift */; };
+		C3D28F0C2A6C5AA6007176F0 /* DirectorySynchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F0B2A6C5AA6007176F0 /* DirectorySynchronizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,20 @@
 		C3045EF12A6A708800A028D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3045EF42A6A708800A028D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C3045EF62A6A708800A028D8 /* DirectoryCopy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DirectoryCopy.entitlements; sourceTree = "<group>"; };
+		C35288782A6BE21D001B3BEB /* ContentCheckMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCheckMethod.swift; sourceTree = "<group>"; };
+		C352887A2A6C2D79001B3BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C352887E2A6C2E7C001B3BEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C3D28EFB2A6C3D25007176F0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C3D28EFC2A6C3D32007176F0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C3D28EFD2A6C3D53007176F0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C3D28EFE2A6C4817007176F0 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C3D28EFF2A6C483B007176F0 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C3D28F002A6C486C007176F0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		C3D28F022A6C4D91007176F0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C3D28F042A6C4E11007176F0 /* FilePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePickerView.swift; sourceTree = "<group>"; };
+		C3D28F062A6C57FB007176F0 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+		C3D28F092A6C5936007176F0 /* SynchronizeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizeButtonView.swift; sourceTree = "<group>"; };
+		C3D28F0B2A6C5AA6007176F0 /* DirectorySynchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectorySynchronizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,11 +73,17 @@
 		C3045EEC2A6A708700A028D8 /* DirectoryCopy */ = {
 			isa = PBXGroup;
 			children = (
+				C3D28F082A6C58FD007176F0 /* Views */,
+				C3BAD1132A6C3BC5008C8AF5 /* Translations */,
+				C352887A2A6C2D79001B3BEB /* Info.plist */,
 				C3045EED2A6A708700A028D8 /* DirectoryCopyApp.swift */,
 				C3045EEF2A6A708700A028D8 /* ContentView.swift */,
 				C3045EF12A6A708800A028D8 /* Assets.xcassets */,
 				C3045EF62A6A708800A028D8 /* DirectoryCopy.entitlements */,
 				C3045EF32A6A708800A028D8 /* Preview Content */,
+				C35288782A6BE21D001B3BEB /* ContentCheckMethod.swift */,
+				C3D28F022A6C4D91007176F0 /* Extensions.swift */,
+				C3D28F0B2A6C5AA6007176F0 /* DirectorySynchronizer.swift */,
 			);
 			path = DirectoryCopy;
 			sourceTree = "<group>";
@@ -67,6 +94,24 @@
 				C3045EF42A6A708800A028D8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C3BAD1132A6C3BC5008C8AF5 /* Translations */ = {
+			isa = PBXGroup;
+			children = (
+				C352887F2A6C2E7C001B3BEB /* Localizable.strings */,
+			);
+			path = Translations;
+			sourceTree = "<group>";
+		};
+		C3D28F082A6C58FD007176F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3D28F042A6C4E11007176F0 /* FilePickerView.swift */,
+				C3D28F062A6C57FB007176F0 /* OptionsView.swift */,
+				C3D28F092A6C5936007176F0 /* SynchronizeButtonView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +156,12 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				fr,
+				es,
+				it,
+				ar,
+				"zh-Hans",
 			);
 			mainGroup = C3045EE12A6A708700A028D8;
 			productRefGroup = C3045EEB2A6A708700A028D8 /* Products */;
@@ -128,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3045EF52A6A708800A028D8 /* Preview Assets.xcassets in Resources */,
+				C352887D2A6C2E7C001B3BEB /* Localizable.strings in Resources */,
 				C3045EF22A6A708800A028D8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,11 +192,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3045EF02A6A708700A028D8 /* ContentView.swift in Sources */,
+				C3D28F0C2A6C5AA6007176F0 /* DirectorySynchronizer.swift in Sources */,
+				C35288792A6BE21D001B3BEB /* ContentCheckMethod.swift in Sources */,
+				C3D28F052A6C4E11007176F0 /* FilePickerView.swift in Sources */,
+				C3D28F072A6C57FB007176F0 /* OptionsView.swift in Sources */,
 				C3045EEE2A6A708700A028D8 /* DirectoryCopyApp.swift in Sources */,
+				C3D28F0A2A6C5936007176F0 /* SynchronizeButtonView.swift in Sources */,
+				C3D28F032A6C4D91007176F0 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C352887F2A6C2E7C001B3BEB /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C352887E2A6C2E7C001B3BEB /* en */,
+				C3D28EFB2A6C3D25007176F0 /* fr */,
+				C3D28EFC2A6C3D32007176F0 /* es */,
+				C3D28EFD2A6C3D53007176F0 /* de */,
+				C3D28EFE2A6C4817007176F0 /* it */,
+				C3D28EFF2A6C483B007176F0 /* ar */,
+				C3D28F002A6C486C007176F0 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C3045EF72A6A708800A028D8 /* Debug */ = {
@@ -274,6 +349,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DirectoryCopy/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Verzeichnis Synchronisierer";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -304,6 +380,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DirectoryCopy/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Verzeichnis Synchronisierer";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";

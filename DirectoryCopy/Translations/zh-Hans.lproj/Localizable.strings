@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  DirectoryCopy
+
+  Created by Eric Dupont on 22.07.23.
+  
+*/
+
+"app_title" = "目录同步器";
+"choose_source_button" = "选择源目录 (A)";
+"source_text" = "源 (A):";
+"not_choosen_text" = "未选择";
+"choose_dest_button" = "选择目标目录 (B)";
+"dest_text" = "目标 (B):";
+"should_delete_toggle" = "删除在目标目录中但不在源目录中的文件";
+"check_existing_files_toggle" = "检查现有文件的更改 (推荐)";
+"check_method_picker" = "检查方法:";
+"sha256_text" = "SHA256 (推荐)";
+"direct_comparism_text" = "直接文件比较";
+"check_method_hint_text" = "注意：SHA256 方法可以大大加快同步速度，但不能保证100%的准确性。直接文件比较可以100%确定文件内容是否有更改。SHA256未能识别这种更改的概率低于0.00000001%！";
+"sync_button" = "开始同步";
+"no_directory_choosen_alert_title" = "目录未选择";
+"no_directory_choosen_alert_text" = "请先选择一个源目录和一个目标目录，然后再开始同步。";
+"success_alert_title" = "成功！";
+"success_alert_text" = "同步已成功完成！";
+"synchronization_running_progress" = "正在同步目录...";
+"stats_files_in_source" = "源目录中的文件数：%d";
+"stats_directories_in_source" = "源目录中的目录数：%d";
+"stats_copied_files" = "已复制的文件数：%d";
+"stats_overwritten_files" = "已覆盖的文件数：%d";
+"stats_deleted_files_in_destination" = "目标目录中已删除的文件数：%d";
+"stats_duration" = "持续时间：%.2f秒";

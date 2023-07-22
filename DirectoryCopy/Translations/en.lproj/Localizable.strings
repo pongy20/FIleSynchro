@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  DirectoryCopy
+
+  Created by Eric Dupont on 22.07.23.
+  
+*/
+
+"app_title" = "Directory Synchronizer";
+"choose_source_button" = "Choose a source directory (A)";
+"source_text" = "Source (A):";
+"not_choosen_text" = "not chosen";
+"choose_dest_button" = "Choose a target directory (B)";
+"dest_text" = "Target (B):";
+"should_delete_toggle" = "Delete files present in the target directory but not in the source directory";
+"check_existing_files_toggle" = "Check files for changes (recommended)";
+"check_method_picker" = "Checking method:";
+"sha256_text" = "SHA256 (recommended)";
+"direct_comparism_text" = "Direct file comparison";
+"check_method_hint_text" = "Note: The SHA256 method provides a significantly faster synchronization but does not ensure 100% accuracy. The direct file comparison gives you the ability to ensure 100% whether the content of the file contains changes. The chance that this change will not be recognized with SHA256 is lower than 0.00000001%!";
+"sync_button" = "Start synchronization";
+"no_directory_choosen_alert_title" = "Directories not chosen";
+"no_directory_choosen_alert_text" = "Please choose a source and target directory before starting the synchronization.";
+"success_alert_title" = "Success!";
+"success_alert_text" = "The synchronization has been successfully carried out!";
+"synchronization_running_progress" = "Directories are being synchronized...";
+"stats_files_in_source" = "Files in source directory: %d";
+"stats_directories_in_source" = "Directories in source directory: %d";
+"stats_copied_files" = "Copied files: %d";
+"stats_overwritten_files" = "Overwritten files: %d";
+"stats_deleted_files_in_destination" = "Deleted files in destination directory: %d";
+"stats_duration" = "Duration: %.2f seconds";
+

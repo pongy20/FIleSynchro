@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CryptoKit
 
 struct ContentView: View {
     @State private var src: URL? = nil
@@ -16,67 +17,32 @@ struct ContentView: View {
     @State private var alertMessage: String = ""
     @State private var alertTitle: String = ""
     @State private var isSyncing: Bool = false
-    @State private var shouldDelete: Bool = false
+    @State private var shouldCheckContent = true
+    @State private var checkMethod: ContentCheckMethod = .sha256
+    @State private var shouldDelete: Bool = true
+    @State private var showAdvancedOptions = false
 
     var body: some View {
         VStack() {
-            Text("Verzeichnis-Synchro")
+            Text("app_title")
                 .bold()
                 .font(.title)
+            
+            Spacer()
+            
             if (isSyncing) {
                 ProgressView() {
-                   Text("Synchronisiere Verzeichnisse...")
+                    Text("synchronization_running_progress")
                 }.progressViewStyle(.linear)
             }
-            HStack {
-                Button("Quellverzeichnis auswählen (A)") {
-                    self.isSourcePickerShown = true
-                }
-                Text("Quelle (A): \(self.src?.path ?? "nicht ausgewählt")")
-            }
-            .fileImporter(isPresented: $isSourcePickerShown, allowedContentTypes: [.folder]) { result in
-                switch result {
-                case .success(let url):
-                    self.src = url
-                case .failure(let error):
-                    print("Error selecting source directory: \(error)")
-                }
-            }
-
-            HStack {
-                Button("Zielverzeichnis auswählen (B)") {
-                    self.isDestinationPickerShown = true
-                }
-                Text("Ziel (B): \(self.dest?.path ?? "nicht ausgewählt")")
-            }
-            .fileImporter(isPresented: $isDestinationPickerShown, allowedContentTypes: [.folder]) { result in
-                switch result {
-                case .success(let url):
-                    self.dest = url
-                case .failure(let error):
-                    print("Error selecting destination directory: \(error)")
-                }
-            }
+            FilePickerView(url: $src, buttonText: LocalizedStringKey("choose_source_button").stringValue(), labelText: LocalizedStringKey("source_text").stringValue())
+            FilePickerView(url: $dest, buttonText: LocalizedStringKey("choose_dest_button").stringValue(), labelText: LocalizedStringKey("dest_text").stringValue())
             
-            Toggle(isOn: $shouldDelete) {
-                Text("Objekte im Zielverzeichnis löschen, die nicht im Quellverzeichnis vorhanden sind")
-            }
-
-            VStack {
-                Button("Verzeichnisse Synchronisieren") {
-                    if let src = self.src, let dest = self.dest {
-                        self.isSyncing = true
-                        DispatchQueue.global().async {
-                            self.syncDirectories(src: src.path, dest: dest.path)
-                            DispatchQueue.main.async {
-                                self.isSyncing = false
-                            }
-                        }
-                    } else {
-                        showAlert(title: "Keine Verzeichnisse ausgewählt", message: "Bitte wähle zuerst Verzeichnisse aus!")
-                    }
-                }
-            }
+            OptionsView(shouldDelete: $shouldDelete, shouldCheckContent: $shouldCheckContent, checkMethod: $checkMethod)
+            
+            Spacer()
+            
+            SynchronizeButtonView(isSyncing: $isSyncing, shouldDeleteFilesInDest: shouldDelete, src: src, dest: dest, shouldCheckContent: shouldCheckContent, checkMethod: checkMethod, showAlert: showAlert(title:message:))
         }
         .padding()
         .alert(isPresented: $isAlertShown) {
@@ -84,47 +50,19 @@ struct ContentView: View {
         }
     }
 
-    func syncDirectories(src: String, dest: String) {
-        let fileManager = FileManager.default
-        Thread.sleep(forTimeInterval: 1)
 
-        do {
-            // Prüfe und lösche Dateien und Ordner, die in dest aber nicht in src sind
-            if shouldDelete {
-                let destContents = try fileManager.contentsOfDirectory(atPath: dest)
-                for item in destContents {
-                    let itemPath = "\(dest)/\(item)"
-                    if !fileManager.fileExists(atPath: "\(src)/\(item)") {
-                            try fileManager.removeItem(atPath: itemPath)
-                    }
-                }
-            }
-
-            // Kopiere Dateien und Ordner von src nach dest, wenn sie noch nicht existieren
-            let srcContents = try fileManager.contentsOfDirectory(atPath: src)
-            for item in srcContents {
-                let itemPath = "\(src)/\(item)"
-                if !fileManager.fileExists(atPath: "\(dest)/\(item)") {
-                    if fileManager.fileExists(atPath: itemPath) {
-                        try fileManager.copyItem(atPath: itemPath, toPath: "\(dest)/\(item)")
-                    }
-                }
-            }
-            showAlert(title: "Dateien synchronisiert", message: "Dateien wurden erfolgreich synchronisiert!")
-        } catch {
-            showAlert(title: "Fehler", message: "Es ist ein Fehler aufgetreten. Dateien wurden nicht synchronisiert.")
-        }
-    }
     func showAlert(title: String, message: String) {
         alertTitle = title
         alertMessage = message
         isAlertShown = true
     }
+
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .frame(width: 500, height: 300)
     }
 }
 

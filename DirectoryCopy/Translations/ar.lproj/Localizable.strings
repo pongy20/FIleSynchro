@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  DirectoryCopy
+
+  Created by Eric Dupont on 22.07.23.
+  
+*/
+
+"app_title" = "مزامنة المجلدات";
+"choose_source_button" = "اختر المجلد المصدر (A)";
+"source_text" = "المصدر (A):";
+"not_choosen_text" = "لم يتم الاختيار";
+"choose_dest_button" = "اختر مجلد الوجهة (B)";
+"dest_text" = "الوجهة (B):";
+"should_delete_toggle" = "حذف الملفات الموجودة في مجلد الوجهة ولكن ليست في المجلد المصدر";
+"check_existing_files_toggle" = "تحقق من التغييرات في الملفات الموجودة (موصى به)";
+"check_method_picker" = "طريقة التحقق:";
+"sha256_text" = "SHA256 (موصى به)";
+"direct_comparism_text" = "مقارنة الملفات المباشرة";
+"check_method_hint_text" = "ملاحظة: الطريقة SHA256 توفر مزامنة أسرع بكثير ولكن لا تضمن الدقة بنسبة 100%. المقارنة المباشرة للملفات تتيح التحقق بنسبة 100% إذا تم تغيير محتوى الملف. الفرصة التي لن يتم اكتشاف هذا التغيير بواسطة SHA256 هي أقل من 0,00000001%!";
+"sync_button" = "ابدأ المزامنة";
+"no_directory_choosen_alert_title" = "لم يتم اختيار المجلدات";
+"no_directory_choosen_alert_text" = "الرجاء اختيار مجلد المصدر ومجلد الوجهة أولاً قبل بدء المزامنة.";
+"success_alert_title" = "النجاح!";
+"success_alert_text" = "تمت المزامنة بنجاح!";
+"synchronization_running_progress" = "جاري مزامنة المجلدات...";
+"stats_files_in_source" = "الملفات في الدليل المصدر: %d";
+"stats_directories_in_source" = "الدلائل في الدليل المصدر: %d";
+"stats_copied_files" = "الملفات المنسوخة: %d";
+"stats_overwritten_files" = "الملفات المكتوبة فوق: %d";
+"stats_deleted_files_in_destination" = "الملفات المحذوفة في الدليل الهدف: %d";
+"stats_duration" = "المدة: %.2f ثوانٍ";
+

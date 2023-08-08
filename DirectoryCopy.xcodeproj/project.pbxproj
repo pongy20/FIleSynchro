@@ -13,6 +13,7 @@
 		C3045EF52A6A708800A028D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3045EF42A6A708800A028D8 /* Preview Assets.xcassets */; };
 		C35288792A6BE21D001B3BEB /* ContentCheckMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35288782A6BE21D001B3BEB /* ContentCheckMethod.swift */; };
 		C352887D2A6C2E7C001B3BEB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C352887F2A6C2E7C001B3BEB /* Localizable.strings */; };
+		C3624BBC2A6D174C0081933C /* SettingsSave.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3624BBB2A6D174C0081933C /* SettingsSave.swift */; };
 		C3D28F032A6C4D91007176F0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F022A6C4D91007176F0 /* Extensions.swift */; };
 		C3D28F052A6C4E11007176F0 /* FilePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F042A6C4E11007176F0 /* FilePickerView.swift */; };
 		C3D28F072A6C57FB007176F0 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D28F062A6C57FB007176F0 /* OptionsView.swift */; };
@@ -30,6 +31,7 @@
 		C35288782A6BE21D001B3BEB /* ContentCheckMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCheckMethod.swift; sourceTree = "<group>"; };
 		C352887A2A6C2D79001B3BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C352887E2A6C2E7C001B3BEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C3624BBB2A6D174C0081933C /* SettingsSave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSave.swift; sourceTree = "<group>"; };
 		C3D28EFB2A6C3D25007176F0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C3D28EFC2A6C3D32007176F0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C3D28EFD2A6C3D53007176F0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				C35288782A6BE21D001B3BEB /* ContentCheckMethod.swift */,
 				C3D28F022A6C4D91007176F0 /* Extensions.swift */,
 				C3D28F0B2A6C5AA6007176F0 /* DirectorySynchronizer.swift */,
+				C3624BBB2A6D174C0081933C /* SettingsSave.swift */,
 			);
 			path = DirectoryCopy;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				C35288792A6BE21D001B3BEB /* ContentCheckMethod.swift in Sources */,
 				C3D28F052A6C4E11007176F0 /* FilePickerView.swift in Sources */,
 				C3D28F072A6C57FB007176F0 /* OptionsView.swift in Sources */,
+				C3624BBC2A6D174C0081933C /* SettingsSave.swift in Sources */,
 				C3045EEE2A6A708700A028D8 /* DirectoryCopyApp.swift in Sources */,
 				C3D28F0A2A6C5936007176F0 /* SynchronizeButtonView.swift in Sources */,
 				C3D28F032A6C4D91007176F0 /* Extensions.swift in Sources */,
@@ -358,7 +362,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = de.coerdevelopment.DirectoryCopy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -389,7 +393,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = de.coerdevelopment.DirectoryCopy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

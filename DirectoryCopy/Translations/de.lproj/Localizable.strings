@@ -16,8 +16,8 @@
 "check_existing_files_toggle" = "Bestehende Dateien auf Änderungen prüfen (empfohlen)";
 "check_method_picker" = "Prüfmethode:";
 "sha256_text" = "SHA256 (empfohlen)";
-"direct_comparism_text" = "Direkter Dateivergleich";
-"check_method_hint_text" = "Hinweis: Die SHA256-Methode sorgt für eine deutlich schnellere Synchronisation, bietet aber keine 100%-ige Genauigkeit. Der direkte Dateivergleich ermöglicht es, 100%ig sicherzustellen, ob der Inhalt der Datei Änderungen enthält. Die Chance, dass eine Änderung mit SHA256 nicht erkannt wird, ist geringer als 0,00000001%!";
+"direct_comparism_text" = "Direkter Dateivergleich (nicht empfohlen)";
+"check_method_hint_text" = "Hinweis: Für eine optimale genauigkeit wird die SHA-256 Methode empfohlen! Diese nimmt allerdings etwas mehr an Rechenleistung und Zeit in Anspruch. Wenn die Synchronisation schneller gehen soll, kann der Metadatenvergleich ausgewählt werden. Bei diesem Vergleich kann es zu Ungenauigkeiten kommen. Der direkte Dateivergleich ist langsam und nimmt viel Arbeitsspeicher in Anspruch. Diese Methode wird nicht empfohlen!";
 "sync_button" = "Synchronisation starten";
 "no_directory_choosen_alert_title" = "Keine Verzeichnisse ausgewählt";
 "no_directory_choosen_alert_text" = "Bitte wähle zuerst ein Quell- und Zielverzeichnis, bevor die Synchronisation gestartet wird.";
@@ -26,7 +26,7 @@
 "synchronization_running_progress" = "Die Verzeichnisse werden synchronisiert...";
 "stats_files_in_source" = "Dateien im Quellverzeichnis: %d";
 "stats_directories_in_source" = "Verzeichnisse im Quellverzeichnis: %d";
-"stats_copied_files" = "Kopierte Dateien: %d";
-"stats_overwritten_files" = "Überschriebene Dateien: %d";
-"stats_deleted_files_in_destination" = "Gelöschte Dateien im Zielverzeichnis: %d";
-"stats_duration" = "Dauer: %.2f Sekunden";
+"stats_copied_files" = "Zu kopierende Dateien: %d";
+"stats_overwritten_files" = "Zu überschreibende Dateien: %d";
+"stats_deleted_files_in_destination" = "Zu löschende Dateien im Zielverzeichnis: %d";
+"stats_duration" = "Dauer der Analyse: %.2f Sekunden";

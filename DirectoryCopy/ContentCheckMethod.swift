@@ -10,6 +10,7 @@ import Foundation
 public enum ContentCheckMethod: String, CaseIterable, Identifiable {
     case sha256 = "SHA-256"
     case directComparison = "Direct Comparison"
+    case metadataComparison = "Metadaten Vergleich"
     
     public var id: String { self.rawValue }
 }

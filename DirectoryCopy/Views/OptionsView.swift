@@ -25,6 +25,7 @@ struct OptionsView: View {
         if shouldCheckContent {
             Picker("check_method_picker", selection: $checkMethod) {
                 Text("sha256_text").tag(ContentCheckMethod.sha256)
+                Text("Metadaten Vergleich (schnell)").tag(ContentCheckMethod.metadataComparison)
                 Text("direct_comparism_text").tag(ContentCheckMethod.directComparison)
             }
             .padding(.leading)
